@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: rgb(39, 29, 29);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    width: 1100px;
+    margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(39, 29, 29, 0.856);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link{
+    color: #fff;
+    padding: 0 10px;
+    text-decoration:none ;
+    list-style: none;
+    transition: .2s;
 }
+
+.link:hover{
+    border-radius: 10px;
+    color: #333;
+    background-color: #fff;
+}
+
+.link:active{
+    color: #fff;
+    background-color: orange;
+}
+
+.input{
+    font-size: 13px;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.btn{
+    background-color: rgb(39, 29, 29);
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 10px;
+    font-size: 13px;
+    transition: .7;
+}
+
+.btn:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.btn:active{
+    background-color: orange ;
+}
+
+.content_home{
+    background-color: rgb(39, 29, 29);
+    padding: 80px 0;
+}
+
+.home_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.category_cart{
+    width: 300px;
+    height: 300px;
+    margin: 10px ;
+    background-color: rgb(34, 23, 23);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 15px 10px 25px #000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.p  { 
+    color: #fff;
+    padding: 0 10px;
+    text-decoration:none ;
+    list-style: none;
+}
+
+.section__info {
+    padding: 100px 0;
+    background-color: rgb(39, 29, 29);
+}
+
+.information__card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 0;
+    border-bottom: 2px solid #fff;
+    color:#fff;
+    text-align: center;
+}
+.box__card {
+    padding: 20px 0;
+}
+.information__box {
+    display: flex;
+}
+
+@media screen and (min-width: 760px) and (max-width: 991px) { 
+    
+.container{
+    width: 750px;
+    margin: 0 auto;
+}
+}
+
+@media screen and (min-width: 280px) and (max-width: 550px) { 
+    
+    .container{
+        width: 250px;
+        margin: 0 auto;
+    }
+    }
